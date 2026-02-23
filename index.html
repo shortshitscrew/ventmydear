@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Lunar Vent</title>
-
 <style>
     body {
         margin: 0;
@@ -15,37 +14,12 @@
         font-family: 'Courier New', monospace;
         overflow: hidden;
         color: white;
-        position: relative;
-    }
-
-    /* 🌙 Crescent Moon */
-    .moon {
-        position: absolute;
-        top: 40px;
-        right: 60px;
-        width: 120px;
-        height: 120px;
-        background: #f1f1f1;
-        border-radius: 50%;
-        box-shadow: 0 0 40px rgba(255,255,255,0.4);
-    }
-
-    .moon::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 30px;
-        width: 120px;
-        height: 120px;
-        background: #000814;
-        border-radius: 50%;
     }
 
     .container {
         text-align: center;
         width: 80%;
         max-width: 600px;
-        z-index: 2;
     }
 
     textarea {
@@ -102,8 +76,6 @@
 </head>
 
 <body>
-
-<div class="moon"></div>
 
 <div class="container">
     <textarea id="vent" placeholder="Let it out... The moon is listening."></textarea>
